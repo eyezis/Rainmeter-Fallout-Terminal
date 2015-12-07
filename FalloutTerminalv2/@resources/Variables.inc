@@ -20,7 +20,6 @@ Terminal.3.Text=Websites
 
 Terminal.Programs.1.Text=Google Chrome
 Terminal.Programs.1.Bang=["C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"]
-;Terminal.Programs.1.Msg=LUA MOTHERFUCKER
 
 Terminal.Programs.2.Text=Steam
 Terminal.Programs.2.Bang=["S:\Steam\steam.exe"]
