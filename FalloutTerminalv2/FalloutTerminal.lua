@@ -36,9 +36,9 @@ end
 -- Settings functions
 function SetScanlines(bVal)
 	if bVal then
-		SKIN:Bang("!SetOption", "MeterScanlines", "ImageName", "#@#Images\\Scanline.png")
+		SKIN:Bang("!SetOption", "MeterScanlines", "Hidden", "0")
 	else
-		SKIN:Bang("!SetOption", "MeterScanlines", "ImageName", "#@#Images\\blank.png")
+		SKIN:Bang("!SetOption", "MeterScanlines", "Hidden", "1")
 	end
 	bScanlines = bVal
 	SKIN:Bang('!WriteKeyValue', 'Variables', 'Scanlines', (bScanlines and '1' or '0'))
