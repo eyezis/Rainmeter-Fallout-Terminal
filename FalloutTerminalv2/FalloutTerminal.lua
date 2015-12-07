@@ -101,6 +101,8 @@ function loadMenu(sMenu, sName)
 		-- Get and store the type of the current option
 		sType = getType(sBaseVar .. sMenu .. i .. ".")
 		tMt["Type"][sMeter] = sType
+		-- Unhighlight the meter if it is a text option
+		if sType ==  "Text" then onLeave(sMeter) end
 		-- Count the number of valid options
 		if sType ~= nil then
 			iNum = iNum + 1
@@ -119,8 +121,8 @@ function loadMenu(sMenu, sName)
 			-- Get and set the text of the meter
 			sText = getText(sBaseVar .. sMenu .. i .. ".")
 			tMt["Text"][sMeter] = sText
-			if bDebugMode then
-				SKIN:Bang("!SetOption", sMeter, "Text", "[" .. sText .. "]" .. " - " .. tostring(sType))
+			if sType == "Text" then
+				SKIN:Bang("!SetOption", sMeter, "Text", sText)
 			else
 				SKIN:Bang("!SetOption", sMeter, "Text", "[" .. sText .. "]")
 			end
@@ -171,16 +173,9 @@ function loadMenu(sMenu, sName)
 	redraw()
 end
 function getText(sOption)
-	local s = SKIN:GetVariable(sOption .. "Text")
-	if s == nil then
-		-- Attempt to get text from the ".Menu" option
-		s = SKIN:GetVariable(sOption .. "Menu")
-		if s == nil then
-			s = "(null)"
-		end
-	end
-
-	return s
+	return SKIN:GetVariable(sOption .. "Text", 
+			SKIN:GetVariable(sOption .. "Menu", "(null)")
+		)
 end
 function getType(sOption)
 	local sM = SKIN:GetVariable(sOption .. "Menu")
@@ -219,8 +214,10 @@ function getFunction(sOption, sType, sText)
 		end
 	elseif sType == "Menu" then
 		local sMenu = SKIN:GetVariable(sOption .. "Menu")
+		local sName = SKIN:GetVariable(sOption .. "Text", sMenu)
+		print(sOption .. "Text", sName)
 
-		return function() loadMenu(sCurrentMenu .. sMenu .. ".", sText) end
+		return function() loadMenu(sCurrentMenu .. sMenu .. ".", sName) end
 	end
 
 	return function() print("Error: Unhandled case") end 

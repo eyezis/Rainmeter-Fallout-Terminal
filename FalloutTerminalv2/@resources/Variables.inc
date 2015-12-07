@@ -16,6 +16,9 @@ Terminal.2.Menu=Games
 Terminal.3.Menu=Web
 Terminal.3.Text=Websites
 
+Terminal.4.Menu=Long
+Terminal.4.Text=Click for inception
+
 
 
 Terminal.Programs.1.Text=Google Chrome
@@ -76,3 +79,49 @@ Terminal.Web.4.Msg=Connecting to Amazon...
 Terminal.Web.5.Text=Netflix
 Terminal.Web.5.Bang=["https://netflix.com"]
 Terminal.Web.5.Msg=Connecting to Netflix...
+
+
+
+Terminal.Long.Header=Inception #1
+Terminal.Long.1.Menu=m
+Terminal.Long.1.Text=Click for more
+
+Terminal.Long.m.Header=Inception #2
+Terminal.Long.m.1.Menu=m
+Terminal.Long.m.1.Text=Click for even more
+
+Terminal.Long.m.m.Header=Inception #3
+Terminal.Long.m.m.1.Menu=m
+Terminal.Long.m.m.1.Text=Keep going
+
+Terminal.Long.m.m.m.Header=Inception #4
+Terminal.Long.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.1.Text=Click again
+
+Terminal.Long.m.m.m.m.Header=Inception #5
+Terminal.Long.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.1.Text=Click again
+
+Terminal.Long.m.m.m.m.m.Header=Inception #6
+Terminal.Long.m.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.m.1.Text=Click again
+
+Terminal.Long.m.m.m.m.m.m.Header=Inception #7
+Terminal.Long.m.m.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.m.m.1.Text=Click again
+
+Terminal.Long.m.m.m.m.m.m.m.Header=Inception #8
+Terminal.Long.m.m.m.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.m.m.m.1.Text=One more
+
+Terminal.Long.m.m.m.m.m.m.m.m.Header=Inception #9
+Terminal.Long.m.m.m.m.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.m.m.m.m.1.Text=I lied
+
+Terminal.Long.m.m.m.m.m.m.m.m.m.Header=Inception #10
+Terminal.Long.m.m.m.m.m.m.m.m.m.1.Menu=m
+Terminal.Long.m.m.m.m.m.m.m.m.m.1.Text=Ok you win
+
+Terminal.Long.m.m.m.m.m.m.m.m.m.m.Header=Inception end
+Terminal.Long.m.m.m.m.m.m.m.m.m.m.1.Text=Congratulations! You made it to the end
+Terminal.Long.m.m.m.m.m.m.m.m.m.m.3.Text=Are you happy?
