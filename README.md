@@ -2,7 +2,7 @@
 Based on Daniel2435/mrcoaster's work on [here](http://mrcoaster.deviantart.com/art/Fallout-Terminal-1-1-2-576429409) and [here](https://redd.it/3vmvvp)
 
 # Usage
-Install rainmeter from [here](https://www.rainmeter.net/). Download [the .rmskin file](https://github.com/eyezis/Rainmeter-Fallout-Terminal/blob/master/Fallout%20Terminal%20v2_v1.0.1.rmskin?raw=true) from this repository and double click it.
+Install rainmeter from [here](https://www.rainmeter.net/). Download [the .rmskin file](https://github.com/eyezis/Rainmeter-Fallout-Terminal/blob/master/Fallout%20Terminal%20v2_v1.0.2.rmskin?raw=true) from this repository and double click it.
 
 # Features
 * Fully configurable infinitely leveled menus
