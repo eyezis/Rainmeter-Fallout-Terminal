@@ -23,7 +23,7 @@ $hWin2 = WinWait("Rainmeter Skin Packager")
 WinActivate($hWin2)
 ControlSetText($hWin2, "", "[CLASS:Edit; INSTANCE:1]", "Fallout Terminal v2")
 ControlSetText($hWin2, "", "[CLASS:Edit; INSTANCE:2]", "EyeZiS")
-ControlSetText($hWin2, "", "[CLASS:Edit; INSTANCE:3]", "v1.0.3")
+ControlSetText($hWin2, "", "[CLASS:Edit; INSTANCE:3]", "v1.0.4")
 ControlClick($hWin2, "", "[CLASS:Button; INSTANCE:3]")
 
 $hWin3 = WinWait("Add")

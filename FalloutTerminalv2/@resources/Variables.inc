@@ -22,6 +22,7 @@ Terminal.4.Text=Click for inception
 
 
 Terminal.Programs.1.Text=Google Chrome
+; See http://docs.rainmeter.net/manual/bangs/ for more info
 Terminal.Programs.1.Bang=["C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"]
 
 Terminal.Programs.2.Text=Steam
